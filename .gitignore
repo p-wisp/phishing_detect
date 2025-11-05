@@ -1,7 +1,7 @@
 node_modules/
 venv/
-model_trining/data/
-model_trining/models
+model_training/data/
+model_training/models
 **/__pycache__/
 
 proxy_server/ca-store/
