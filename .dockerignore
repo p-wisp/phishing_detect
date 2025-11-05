@@ -1,0 +1,11 @@
+# Ignore Git metadata and local development files in Docker context
+.git
+.gitignore
+.dockerignore
+.env
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+notebooks/

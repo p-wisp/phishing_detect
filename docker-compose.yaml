@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  ml_server:
+    build: ./ml_server  
+    container_name: ml_server
+    networks:
+      - localnet 
+
+  proxy_server:
+    build: ./proxy_server  
+    container_name: proxy_server
+    ports:
+      - "7777:7777"  
+    networks:
+      - localnet  
+    depends_on:
+      - ml_server  
+networks:
+  localnet:
+    driver: bridge

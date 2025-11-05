@@ -1,0 +1,51 @@
+{
+  "best_alpha": 0.0,
+  "best_params": {
+    "n_estimators": 600,
+    "num_leaves": 31,
+    "max_depth": -1,
+    "learning_rate": 0.03,
+    "min_child_samples": 20,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 0.0,
+    "scale_pos_weight": 1.0
+  },
+  "valid_scores_threshold_0_5": {
+    "precision": 0.9954853273137697,
+    "recall": 1.0,
+    "f1": 0.997737556561086,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0
+  },
+  "train_size": 3320,
+  "valid_size": 831,
+  "scale_numeric_cols": [
+    "mixed_redirection_hop_count",
+    "mixed_host_similarity",
+    "dom_total_nodes",
+    "dom_max_depth",
+    "dom_num_forms",
+    "dom_num_password_fields",
+    "dom_num_iframes",
+    "dom_percent_external_links",
+    "dom_num_hidden_elements",
+    "url_hostname_length",
+    "url_subdomain_depth",
+    "url_num_special_chars",
+    "url_domain_entropy"
+  ],
+  "categorical_cols": [
+    "url_tld"
+  ],
+  "seed": 42,
+  "data_paths": {
+    "mal": "../data/mal/processed/new_mal_features.csv",
+    "nor": "../data/nor/processed/new_nor_features.csv"
+  },
+  "artifacts": {
+    "scaler": "../models/scaler.pkl",
+    "model": "../models/phishing_model.pkl",
+    "feature_importance_png": "../models/feature_importance.png"
+  }
+}
