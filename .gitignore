@@ -1,8 +1,8 @@
 node_modules/
 venv/
 model_training/data/
-model_training/models
+model_training/models/
 **/__pycache__/
-*/.DS_Store
+**/.DS_Store
 proxy_server/ca-store/
 proxy_server/renders/
