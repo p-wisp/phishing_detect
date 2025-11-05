@@ -1,0 +1,8 @@
+node_modules/
+venv/
+model_trining/data/
+model_trining/models
+**/__pycache__/
+
+proxy_server/ca-store/
+proxy_server/renders/
